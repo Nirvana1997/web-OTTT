@@ -56,11 +56,11 @@
                                 <h1>Log in</h1> 
                                 <p> 
                                     <label for="username" class="uname" data-icon="u" > Your email or username </label>
-                                    <input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
+                                    <input id="username" name="loginId" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
                                 </p>
                                 <p> 
                                     <label for="password" class="youpasswd" data-icon="p"> Your password </label>
-                                    <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" /> 
+                                    <input id="password" name="pwd" required="required" type="password" placeholder="eg. X8df!90EO" />
                                 </p>
                                 <p class="keeplogin"> 
 									<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
@@ -77,15 +77,15 @@
                         </div>
 
                         <div id="register" class="animate form">
-                            <form  action="mysuperscript.php" autocomplete="on"> 
+                            <form  action="<%=request.getContextPath()%>/userAction/reg" method="post" autocomplete="on">
                                 <h1> Sign up </h1> 
                                 <p> 
                                     <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
-                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
+                                    <input id="usernamesignup" name="loginId" required="required" type="text" placeholder="mysuperusername690" />
                                 </p>
                                 <p>
                                     <label for="namesignup" class="name" data-icon="n">Your name</label>
-                                    <input id="namesignup" name="namesignup" required="required" type="text" placeholder="张三" />
+                                    <input id="namesignup" name="name" required="required" type="text" placeholder="张三" />
                                 </p>
                                 <%--<p> --%>
                                     <%--<label for="emailsignup" class="youmail" data-icon="e" > Your name</label>--%>
@@ -93,15 +93,15 @@
                                 <%--</p>--%>
                                 <p> 
                                     <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
-                                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                    <input id="passwordsignup" name="pwd" required="required" type="password" placeholder="eg. X8df!90EO"/>
                                 </p>
                                 <p> 
                                     <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
-                                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                    <input id="passwordsignup_confirm" name="pwd_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
                                 </p>
                                 <p>
                                     <label for="cell_number" class="cellnumber" data-icon="c">Your cellphone number </label>
-                                    <input id="cell_number" name="cell_number" required="required" type="text" placeholder="13913913922"/>
+                                    <input id="cell_number" name="cellNumber" required="required" type="text" placeholder="13913913922"/>
                                 </p>
                                 <p>
                                     <label for="sex" class="yousex" data-icon="s">Your sex </label>

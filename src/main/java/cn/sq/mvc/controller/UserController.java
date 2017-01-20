@@ -38,6 +38,7 @@ public class UserController {
     public ModelAndView reg(HttpServletRequest req, User user) throws Exception{
         ModelAndView mav = new ModelAndView();
         mav.setViewName("home");
+        System.out.println(user.toString());
         if(null==user){
             mav.addObject("message", "用户信息不能为空！");  //加入提示信息，在jsp中我们直接使用${对象名称}就能获取对应的内容
             return mav; //返回页面
