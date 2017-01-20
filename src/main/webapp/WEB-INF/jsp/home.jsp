@@ -19,7 +19,7 @@
 </script>
 
 <head>
-    <title>仓库管理系统→详情</title>
+    <title>webapp详情</title>
 </head>
 <html>
 <body>

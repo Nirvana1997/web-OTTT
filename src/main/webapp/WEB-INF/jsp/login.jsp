@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8" %>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <%-- 上面这两行是java代码的引用 --%>
@@ -109,7 +109,7 @@
                                 </p>
                                 <p>
                                     <label for="age" class="youage" data-icon="p">Your age </label>
-                                    <input id="age" name="age" required="required" type="password" placeholder="eg.30"/>
+                                    <input id="age" name="age" required="required" type="text" placeholder="eg.30"/>
                                 </p>
                                 <p class="signin button"> 
 									<input type="submit" value="Sign up"/> 

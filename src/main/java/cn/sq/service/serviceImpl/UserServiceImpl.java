@@ -37,9 +37,8 @@ public class UserServiceImpl implements UserService{
         }
         //由于我这个是仓库管理系统，根据业务需求来说，我们的用户基本信息都是不能为空的
         //基本信息包括：姓名、年龄、用户名、密码、性别、手机号，年龄大于18
-        if (StringUtils.isEmpty(user.getDuty())
-                || StringUtils.isEmpty(user.getSex())
-                || user.getAge() > 18
+        if ( StringUtils.isEmpty(user.getSex())
+                || user.getAge() <= 18
                 || StringUtils.isEmpty(user.getCellNumber())) {
             //其他综合异常
             throw new OtherThingsException("Some use's base info can not be null");
