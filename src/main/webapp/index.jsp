@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Login and Registration Form with HTML5 and CSS3"/>
     <meta name="author" content="Codrops"/>
-    <script type="text/javascript" src="/static/js/login.js"></script>
+    <script type="text/javascript" src="/static/js/log.js"></script>
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" type="text/css" href="/static/css/demo.css"/>
     <link rel="stylesheet" type="text/css" href="/static/css/style3.css"/>

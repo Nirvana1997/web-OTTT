@@ -19,4 +19,13 @@ public class MainController {
     public String login(){
         return "login";
     }
+
+    /**
+     * 主页
+     * @return
+     */
+    @RequestMapping(value = "/home",method = RequestMethod.GET)
+    public String home(){
+        return "home";
+    }
 }
